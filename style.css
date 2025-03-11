@@ -1,0 +1,171 @@
+/* Definindo fonte e estilo base */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #F1F1F1;
+}
+
+/* Container principal */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Estilo do Header */
+header {
+  background: linear-gradient(90deg, #0046A4, #2C6AC9);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+header p.lead {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #FF6F00;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #FF8C1A;
+}
+
+/* Estilo das Seções */
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Layout das Funcionalidades */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilo dos Indicadores de Mercado */
+.market-trends {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.trend {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trend h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.trend p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Estilo do Testemunho */
+.testimonials {
+  background-color: #E8F5FF;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.testimonial cite {
+  display: block;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #0046A4;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+footer .cta-button {
+  padding: 18px 36px;
+  background-color: #FF6F00;
+}
+
+footer .cta-button:hover {
+  background-color: #FF8C1A;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .market-trends {
+    grid-template-columns: 1fr;
+  }
+}
