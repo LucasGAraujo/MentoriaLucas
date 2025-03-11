@@ -50,4 +50,6 @@ async function buscarCotacao() {
 
     }
 }
-module.exports = { cotacaobit, buscarCotacao }; 
+
+buscarCotacao();
+cotacaobit();
